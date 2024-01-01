@@ -186,7 +186,10 @@ body{
 }
 
 #about p{
-    padding: 20px 20vw;
+    max-width: 800px;
+    padding: 0 100px;
+    margin: auto;
+    margin-top: 50px;
     text-align: justify;
     color: #aeaeae;
 }
@@ -227,10 +230,9 @@ body{
 }
 
 .skills-display{
-    max-width: 60vw;
-    display: flex;
+    max-width: 920px;
+    display: inline-flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     margin-bottom: 20px;
     row-gap: 30px;
     column-gap: 50px ;
@@ -249,12 +251,19 @@ body{
 
 .skill-value{
     position: relative;
-    width: calc(230*0.8px);
+    width: 2%;
     height: 7px;
     border: 3px solid rgb(31, 31, 31);
     background-color: rgba(255, 255, 255, 0.908);
     border-radius: 25px;
     display: flex;
+    overflow: visible;
+    white-space: no-wrap;
+    transition: width 2s ;
+}
+
+.show{
+    width: 100%;
 }
 
 .skill-progress p{
@@ -268,7 +277,7 @@ body{
 
 
 /* technical skills  */
-.skill-progress .cpp{
+/* .skill-progress .cpp{
     width: calc(230*0.9px);
 }
 .skill-progress .python{
@@ -291,10 +300,10 @@ body{
 }
 .skill-progress .sql{
     width: calc(230*0.4px);
-}
+ } */
 
 /* creative skills  */
-.skill-progress .uiux{
+/* .skill-progress .uiux{
     width: calc(230*0.85px);
 }
 .skill-progress .interaction{
@@ -317,4 +326,4 @@ body{
 }
 .skill-progress .user{
     width: calc(230*0.65px);
-}
+} */

@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+        }
+        #item{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 5px;
+        }
+
+        #container{
+            display: inline-flex;
+            background-color: aquamarine;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 550px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="item"></div>
+        <div id="item"></div>
+        <div id="item"></div>
+        <div id="item"></div>
+        <div id="item"></div>
+        <div id="item"></div>
+        <div id="item"></div>
+    </div>
+
+</body>
+<!-- <script>
+    let item = document.getElementById("item");
+    let array =[];
+    let container = document.getElementById("container");
+    while(array.length<5){
+        array.push(item.cloneNode(true));
+    }
+
+    array.forEach(element => {
+        container.appendChild(element);
+    });
+</script> -->
+</html>
